@@ -28,7 +28,6 @@ GitPython==3.1.31
 greenlet==2.0.2
 idna==3.4
 importlib-metadata==6.6.0
-ipython==8.13.2
 jedi==0.18.2
 Jinja2==3.1.2
 jsonschema==4.17.3
