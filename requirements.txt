@@ -1,7 +1,11 @@
-langchain
+langchain==0.0.167
 unstructred
-openai
-chromadb
+openai==0.27.6
+chromadb==0.3.22
 Cython
 tiktoken
 unstructured[local-inference]
+streamlit
+hugchat
+streamlit-chat
+streamlit-extras
