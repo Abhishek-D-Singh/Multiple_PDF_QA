@@ -4,7 +4,7 @@ openai==0.27.6
 chromadb==0.3.22
 Cython==0.29.34
 tiktoken==0.4.0
-unstructured[local-inference]
+unstructured[local-inference]==0.6.6
 streamlit
 hugchat
 streamlit-chat
