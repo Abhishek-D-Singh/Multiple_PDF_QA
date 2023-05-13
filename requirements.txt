@@ -1,10 +1,9 @@
-langchain==0.0.168
-unstructured==0.6.6
-openai==0.27.6
-chromadb==0.3.22
-Cython==0.29.34
-tiktoken==0.4.0
-unstructured[local-inference]==0.6.6
+langchain
+unstructured
+openai
+chromadb
+Cython
+tiktoken
 streamlit
 hugchat
 streamlit-chat
