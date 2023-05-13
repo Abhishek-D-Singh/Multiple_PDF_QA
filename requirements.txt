@@ -9,3 +9,4 @@ streamlit
 hugchat
 streamlit-chat
 streamlit-extras
+google-colab
