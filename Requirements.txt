@@ -1,0 +1,7 @@
+langchain
+unstructred
+openai
+chromadb
+Cython
+tiktoken
+unstructured[local-inference]
