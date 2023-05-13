@@ -9,12 +9,12 @@ Original file is located at
 ### Installation
 """
 
-!pip install langchain
-!pip install unstructured
-!pip install openai
-!pip install chromadb
-!pip install Cython
-!pip install tiktoken
+#!pip install langchain
+#!pip install unstructured
+#!pip install openai
+#!pip install chromadb
+#!pip install Cython
+#!pip install tiktoken
 
 """### Load Required Packages"""
 
@@ -26,7 +26,7 @@ from langchain.indexes import VectorstoreIndexCreator
 # Get your API keys from openai, you will need to create an account. 
 # Here is the link to get the keys: https://platform.openai.com/account/billing/overview
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+#os.environ["OPENAI_API_KEY"] = "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"
 
 """### Connect Google Drive"""
 
@@ -61,10 +61,10 @@ There are three main steps going on after the documents are loaded:
 
 """
 
-!pip install unstructured[local-inference]
+#!pip install unstructured[local-inference]
 
 index = VectorstoreIndexCreator().from_loaders(loaders)
-index
+
 
 #index.query('What was the main topic of the address?')
 
