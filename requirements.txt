@@ -48,7 +48,7 @@ openai==0.27.6
 openpyxl
 openapi-schema-pydantic==1.2.4
 packaging==23.1
-pandas==2.0.1
+pandas
 pandasai
 parso==0.8.3
 pdfminer.six==20221105
