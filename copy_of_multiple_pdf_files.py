@@ -21,14 +21,13 @@ Original file is located at
 from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.indexes import VectorstoreIndexCreator
 from langchain.document_loaders import GoogleDriveLoader
-"""### OpenAI API Key"""
+#OpenAI API Key"""
 
 # Get your API keys from openai, you will need to create an account. 
 # Here is the link to get the keys: https://platform.openai.com/account/billing/overview
 import os
 #os.environ["OPENAI_API_KEY"] = "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"
-
-"""### Connect Google Drive"""
+#Connect Google Drive"""
 loader = GoogleDriveLoader(
     folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",credentials_path="credentials.json",
     # Optional: configure whether to recursively fetch files from subfolders. Defaults to False.
@@ -44,8 +43,7 @@ docs=loader.load()
 #os.listdir(pdf_folder_path)
 
 
-
-"""### Load Multiple PDF files"""
+# Load Multiple PDF files"""
 
 # location of the pdf file/files. 
 #loaders = [UnstructuredPDFLoader(os.path.join(pdf_folder_path, fn)) for fn in os.listdir(pdf_folder_path)]
