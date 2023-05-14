@@ -30,7 +30,7 @@ import os
 
 """### Connect Google Drive"""
 loader = GoogleDriveLoader(
-    folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",
+    folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",credentials_path=""
     # Optional: configure whether to recursively fetch files from subfolders. Defaults to False.
     recursive=False
 )
