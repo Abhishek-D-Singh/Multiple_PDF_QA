@@ -21,6 +21,13 @@ Original file is located at
 from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.indexes import VectorstoreIndexCreator
 from langchain.document_loaders import GoogleDriveLoader
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+
+gauth = GoogleAuth()
+drive = GoogleDrive(gauth)
+
+folder = '12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek'
 #OpenAI API Key"""
 
 # Get your API keys from openai, you will need to create an account. 
