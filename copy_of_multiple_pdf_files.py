@@ -26,6 +26,8 @@ from pydrive.drive import GoogleDrive
 
 gauth = GoogleAuth()
 drive = GoogleDrive(gauth)
+file_list = drive.ListFile(
+    {'q': "'12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek' in parents"}).GetList()
 
 folder = '12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek'
 #OpenAI API Key"""
@@ -35,25 +37,25 @@ folder = '12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek'
 import os
 #os.environ["OPENAI_API_KEY"] = "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"
 #Connect Google Drive"""[Method-2]
-#loader = GoogleDriveLoader(
-#    folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",credentials_path="credentials.json",
-    # Optional: configure whether to recursively fetch files from subfolders. Defaults to False.
-#    recursive=False
-#)
-#docs=loader.load()
+loader = GoogleDriveLoader(
+    folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",credentials_path="client_secrets.json",
+     Optional: configure whether to recursively fetch files from subfolders. Defaults to False.
+    recursive=False
+)
+docs=loader.load()
 # connect your Google Drive
-from google.colab import drive
-drive.mount('/content/gdrive', force_remount=True)
-root_dir = "/content/gdrive/My Drive/"
+#from google.colab import drive
+#drive.mount('/content/gdrive', force_remount=True)
+#root_dir = "/content/gdrive/My Drive/"
 
-pdf_folder_path = f'{root_dir}/data/'
-os.listdir(pdf_folder_path)
+#pdf_folder_path = f'{root_dir}/data/'
+#os.listdir(pdf_folder_path)
 
 
 # Load Multiple PDF files"""
 
 # location of the pdf file/files. 
-loaders = [UnstructuredPDFLoader(os.path.join(pdf_folder_path, fn)) for fn in os.listdir(pdf_folder_path)]
+#loaders = [UnstructuredPDFLoader(os.path.join(pdf_folder_path, fn)) for fn in os.listdir(pdf_folder_path)]
 
 #loaders
 
