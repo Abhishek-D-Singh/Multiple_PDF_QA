@@ -11,3 +11,6 @@ streamlit-chat==0.0.2.2
 streamlit-extras==0.2.7
 altair==4.0
 google-drive
+google-api-python-client 
+google-auth-httplib2 
+google-auth-oauthlib
