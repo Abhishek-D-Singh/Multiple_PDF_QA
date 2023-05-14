@@ -30,7 +30,7 @@ import os
 
 """### Connect Google Drive"""
 loader = GoogleDriveLoader(
-    folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",credentials_path="https://github.com/Abhishek-D-Singh/Multiple_PDF_QA/blob/main/client_secret_398388491549-tu6ls5fi6ara0d92uvu2p4o795cfu7en.apps.googleusercontent.com.json",
+    folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",credentials_path="credentials.json",
     # Optional: configure whether to recursively fetch files from subfolders. Defaults to False.
     recursive=False
 )
