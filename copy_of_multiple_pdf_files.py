@@ -20,7 +20,7 @@ Original file is located at
 
 from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.indexes import VectorstoreIndexCreator
-from langchain.document_loaders import 
+from langchain.document_loaders import GoogleDriveLoader
 """### OpenAI API Key"""
 
 # Get your API keys from openai, you will need to create an account. 
