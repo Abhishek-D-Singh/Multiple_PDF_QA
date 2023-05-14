@@ -27,26 +27,26 @@ from langchain.document_loaders import GoogleDriveLoader
 # Here is the link to get the keys: https://platform.openai.com/account/billing/overview
 import os
 #os.environ["OPENAI_API_KEY"] = "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"
-#Connect Google Drive"""
-loader = GoogleDriveLoader(
-    folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",credentials_path="credentials.json",
+#Connect Google Drive"""[Method-2]
+#loader = GoogleDriveLoader(
+#    folder_id="12vwDZ9GxZOgILsjdF2hIH4gjZ51x1sek",credentials_path="credentials.json",
     # Optional: configure whether to recursively fetch files from subfolders. Defaults to False.
-    recursive=False
-)
-docs=loader.load()
+#    recursive=False
+#)
+#docs=loader.load()
 # connect your Google Drive
-#from google.colab import drive
-#drive.mount('/content/gdrive', force_remount=True)
-#root_dir = "/content/gdrive/My Drive/"
+from google.colab import drive
+drive.mount('/content/gdrive', force_remount=True)
+root_dir = "/content/gdrive/My Drive/"
 
-#pdf_folder_path = f'{root_dir}/data/'
-#os.listdir(pdf_folder_path)
+pdf_folder_path = f'{root_dir}/data/'
+os.listdir(pdf_folder_path)
 
 
 # Load Multiple PDF files"""
 
 # location of the pdf file/files. 
-#loaders = [UnstructuredPDFLoader(os.path.join(pdf_folder_path, fn)) for fn in os.listdir(pdf_folder_path)]
+loaders = [UnstructuredPDFLoader(os.path.join(pdf_folder_path, fn)) for fn in os.listdir(pdf_folder_path)]
 
 #loaders
 
@@ -65,8 +65,8 @@ There are three main steps going on after the documents are loaded:
 """
 
 #!pip install unstructured[local-inference]
-index = VectorstoreIndexCreator().from_loaders(docs)
-#index = VectorstoreIndexCreator().from_loaders(loaders)
+#index = VectorstoreIndexCreator().from_loaders(docs)
+index = VectorstoreIndexCreator().from_loaders(loaders)
 import streamlit as st
 from streamlit_chat import message
 from streamlit_extras.colored_header import colored_header
